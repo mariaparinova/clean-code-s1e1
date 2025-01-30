@@ -36,13 +36,9 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
-  display: flex;
-}
-
 .tasks-container {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 li {
@@ -51,7 +47,7 @@ li {
 
 .btn {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
