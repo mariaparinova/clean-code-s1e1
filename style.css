@@ -11,11 +11,11 @@
   text-align: right;
 }
 
-.header .img {
+.header__img {
   width: 100%;
 }
 
-.header .more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -30,7 +30,7 @@
   margin: 0 auto 0;
 }
 
-.task {
+.tasks-container__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -45,7 +45,7 @@ li {
   list-style: none;
 }
 
-.btn {
+.tasks-container__btn {
   background: none;
   border: 0;
   color: #888;
@@ -55,11 +55,11 @@ li {
   cursor: pointer;
 }
 
-.btn:hover {
+.tasks-container__btn:hover {
   color: #3a3a3a;
 }
 
-.h3 {
+.tasks-container__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -69,7 +69,7 @@ li {
   text-transform: uppercase;
 }
 
-.task {
+.tasks-container__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,11 +81,11 @@ li {
   font-family: Lato, sans-serif;
 }
 
-.task:focus {
+.tasks-container__input:focus {
   color: #333;
 }
 
-.task-item {
+.tasks-container__item {
   overflow: hidden;
   padding: 20px 0;
   display: flex;
@@ -98,49 +98,49 @@ li {
   padding: 0;
 }
 
-#completed .task-item,
-#uncompleted .task-item {
+#completed .tasks-container__item,
+#uncompleted .tasks-container__item {
   border-bottom: 1px solid #eee;
 }
 
-.task-item > .checkbox {
+.tasks-container__item > .tasks-container__task-item__checkbox {
   margin: 0 10px;
 }
 
-.task-item > .label {
+.tasks-container__item > .tasks-container__task-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
 }
 
-.btn.delete .icon {
+.tasks-container__btn_delete .tasks-container__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete .icon:hover {
+.tasks-container__btn_delete .tasks-container__icon:hover {
   transform: rotateZ(0);
 }
 
-#completed .task{
+#completed .tasks-container__label {
   text-decoration: line-through;
   color: #888;
 }
 
-.tasks-container .task-item .task {
+.tasks-container__input {
   display:none;
 }
 
-.tasks-container .task-item .label {
+.tasks-container__label {
   display:inline-block;
 }
 
-.tasks-container .task-item.editMode .task {
+.tasks-container__item_editMode .tasks-container__input {
   display: inline-block;
   color: #888;
 }
 
-.tasks-container .task-item.editMode .label {
+.tasks-container__item_editMode .tasks-container__label {
   display: none;
 }
