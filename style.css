@@ -19,7 +19,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media screen and (max-width: 768px) {
   .header {
     text-align: center;
   }
@@ -34,6 +34,7 @@
 .task__label {
   display: inline-block;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .tasks__task-list {
@@ -113,6 +114,7 @@ li {
 .tasks__task-list .task__label {
   padding-left: 10px;
   box-sizing: border-box;
+  max-width: 347px;
   font-size: 18px;
 }
 
