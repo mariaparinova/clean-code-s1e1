@@ -1,4 +1,3 @@
-/* Basic Style */
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -27,40 +26,28 @@
 }
 
 .main {
-  display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
 .task__input,
 .task__label {
-  width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
-  display: flex;
-}
-
 .tasks__task-list {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-li,
-h3 {
+li {
   list-style: none;
-}
-
-input,
-button{
-  outline: none;
 }
 
 .task__btn {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -72,7 +59,6 @@ button{
   color: #3a3a3a;
 }
 
-/* Heading */
 .tasks__title {
   color: #333;
   font-weight: 700;
@@ -100,7 +86,6 @@ button{
   color: #333;
 }
 
-/* New Task */
 .task__label_new-task {
   display: none;
   margin: 0 0 20px;
@@ -108,15 +93,10 @@ button{
 
 .tasks__input_new-task {
   display: inline-block;
-  width: 318px;
 }
 
-/* Task list */
 .task__item {
-  overflow: hidden;
   padding: 20px 0;
-
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,10 +104,6 @@ button{
 
 .tasks__task-list .task__item {
   border-bottom: 1px solid #eee;
-}
-
-.task__item > * {
-  vertical-align: middle;
 }
 
 .task__checkbox {
@@ -138,11 +114,6 @@ button{
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
-}
-
-li > input[type="text"] {
-  width: 226px;
 }
 
 .task__icon {
@@ -155,13 +126,11 @@ li > input[type="text"] {
   transform: rotateZ(0);
 }
 
-/* Completed */
 #completed .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
 .tasks__task-list .task__input {
   display: none;
 }
